@@ -1,0 +1,275 @@
+
+*{
+  box-sizing: border-box;
+}
+
+/* Background Start editare */
+html {
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  /* overflow: hidden; */
+  color: white;
+}
+/* Background Stop editare */
+
+/* Body */
+ /* body{
+
+    width: auto;
+
+    align-items: center;
+    opacity: 0.9;
+    background-size: cover;
+    margin: 0;
+} */
+/* Body */
+
+/* Header LOGO/ADMINISTRATOR(+POZA) */
+.head{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.head .logo img{
+    width: 250px;
+    height: 170px;
+    margin-top: 30px;
+	margin-left: 10px;
+    /* border: 1px solid black; */
+}
+
+/* .admin1{
+  display: flex;
+  justify-content: flex-end;
+} */
+
+
+.admin{
+  position: relative;
+  text-align: center;
+  width: 200px;
+  height: 150px ;
+  margin: 10px;
+  margin-left: auto;
+  right: 40px;
+  top: 10px;
+}
+/* Header LOGO/ADMINISTRATOR(+POZA) */
+
+/* Meniu start Aliniere*/
+.menu{
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.menu .divizii{
+  display:flex;
+  align-items: flex-end;
+}
+
+.menu ul{
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul li{
+  width: 250px;
+  font-size: 1.3rem;
+  background: #ccccccb0;
+  padding: 10px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.meniu-angajati ul {
+
+  position: relative;
+  top:-96px;
+  left: 100px;
+  cursor:pointer; 
+}
+
+.meniu-angajati ul h4{
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.date-angajati {
+  position: absolute;
+  display: none;
+}
+
+.date-angajati ul li{
+  position: relative;
+  width: 300px;
+  right: 55px;
+  top:85px;
+  border: none;
+  text-align: left;
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+.container-date{
+
+  display: flex;
+}
+
+
+.pozaAngajat img{
+  width: 100px;
+  height: 100px;
+}
+/* Meniu Stop Aliniere*/
+
+/* Meniu DD Start */
+.menu ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.meniu-angajati{
+  display: none;
+}
+
+#meniu-divizie li:hover{
+  cursor: default;
+  background-color: #6699FF;
+  border: 1px solid white;
+  cursor:pointer; 
+}
+
+.menu ul li:hover .meniu-angajati {
+  display: block;
+  position: absolute;
+  margin-left: 100px; 
+}
+
+
+.meniu-angajati ul li:hover .date-angajati {
+  display: inline-block;
+}
+
+/* Meniu DD Stop */
+
+
+/* Butoane Editare Start */
+.butoane{
+  font-size: 20px;
+  float:right;
+}
+
+.butoane ul{
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+}
+
+.butoane ul li{
+    display: block;
+	position: relative;
+    width: 250px;
+    height: 36px;
+    text-align: center;
+    padding: 5px 18px 5px 18px;
+  	border: none;
+    background: none;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+	line-height: 1.42857143;
+}
+
+
+.butoane ul li:hover{
+  cursor: default;
+  background-color: none;
+  border: none;
+  cursor:pointer; 
+}
+
+button:hover{
+  background-color: #6699FF;
+}
+
+.butoane{
+  position:relative;
+  top:100px;
+}
+
+button{
+
+padding: 8px;
+font-size: 1rem;
+cursor: pointer;
+box-shadow: 5px 5px rgba(0, 0, 0, 0.473);
+border-radius: 8px;
+}
+
+
+/* Butoane Editare Stop */
+
+
+
+/* Adaugare angajat */
+.AddEdit{
+position: absolute;
+margin-left: 50%;
+transform: translateX(-50%);
+font-size: 1.5rem;
+width: 350px;
+/* border: 1px solid black; */
+background-color: rgba(17, 17, 17, 0.26);
+text-align: center;
+padding: 10px;
+display: none;
+}
+
+.AddEdit label{
+
+  /* flex-direction: column; */
+  display: block;
+  font-size: 1.5rem;
+
+
+}
+.dateAngajat input{
+  font-size: 1.2rem;
+  padding: 3px;
+  margin-bottom: 13px;
+  width: 200px;
+}
+.oreAcces input{
+  width: 65px !important;;
+}
+
+/* Adaugare angajat Stop*/
+
+
+.accesForm,.gradForm{
+  font-size: 1.2rem;
+  padding: 3px;
+  margin-bottom: 13px;
+  width: 200px;
+
+}
+
+
+.cautarePuk{
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+font-size: 1.8rem;
+}
+
+.cautarePuk input {
+
+  height: 25px;
+  width: 100px;
+  margin: 10px;
+  font-size: 18px;
+}
