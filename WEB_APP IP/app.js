@@ -12,8 +12,7 @@ const divizieArray = [];
 var files = [];
 var ImgUrl;
 
-// TODO
-// Trebuie sa salvam poza 
+
 
 
 
